@@ -16,7 +16,7 @@ public class HelloWorldClient {
 				
 		String configLocation = "context-helloworld.xml"; 
 		ApplicationContext context = new ClassPathXmlApplicationContext(configLocation);
-		HelloWorldService helloworld = (HelloWorldService)context.getBean("helloworld");
+		HelloWorldService helloworld = (HelloWorldService)context.getBean("helloworld3");
 		
 		logger.debug(helloworld.sayHello());
 	}
